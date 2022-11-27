@@ -2,9 +2,9 @@
 .form {
   position: relative;
   z-index: 1;
-  background: #FFFFFF;
+  background: #003865;
   max-width: 400px;
-  margin: 0 auto 100px;
+  margin: 0 5rem;
   padding: 30px;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
@@ -12,10 +12,11 @@
   border-bottom-right-radius: 3px;
   text-align: center;
 }
-.form .thumbnail {
-  background: #C1DEAE;
-  width: 150px;
-  height: 150px;
+.thumbnail {
+  position: absolute;
+  right: 10rem;
+  top: 10rem;
+  background: #c1deae;
   margin: 0 auto 30px;
   padding: 50px 30px;
   border-top-left-radius: 100%;
@@ -28,7 +29,9 @@
   display: block;
   width: 100%;
 }
-.form input, .form textarea, .form div {
+.form input,
+.form textarea,
+.form div {
   outline: 0;
   background: #f2f2f2;
   width: 100%;
@@ -44,7 +47,7 @@
 }
 .form button {
   outline: 0;
-  background: #C1DEAE;
+  background: #c6dabf;
   width: 100%;
   border: 0;
   padding: 15px;
@@ -63,7 +66,7 @@
   font-size: 12px;
 }
 .form .message a {
-  color: #219F94;
+  color: #219f94;
   text-decoration: none;
 }
 
@@ -71,16 +74,17 @@
   position: relative;
   z-index: 1;
   max-width: 400px;
-  margin: 0 auto;
+  margin: 0;
 }
-.containerSignup:before, .containerSignup:after {
+.containerSignup:before,
+.containerSignup:after {
   content: "";
   display: block;
   clear: both;
 }
 .containerSignup .info {
-  margin: 50px auto;
-  text-align: center;
+  margin: 50px 5rem;
+  text-align: left;
 }
 .containerSignup .info h1 {
   margin: 0 0 15px;
@@ -98,7 +102,7 @@
   text-decoration: none;
 }
 .containerSignup .info span .fa {
-  color: #219F94;
+  color: #219f94;
 }
 
 /* END Form */

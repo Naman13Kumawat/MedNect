@@ -3,7 +3,7 @@ import axios from "axios";
 import "./signup.css";
 import { Link } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
-import imageSrc from "../../assets/images/patient-login.png";
+import imageSrc from "../../assets/images/Asset1.png";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../landingPage/Navbar";
 
@@ -95,7 +95,11 @@ export default function Signup() {
   };
 
   return (
-    <div>
+    <div
+      style={{
+        backgroundColor: "#f3e9d2",
+      }}
+    >
       <ToastContainer />
       <Navbar />
       <div className="containerSignup">
@@ -104,9 +108,6 @@ export default function Signup() {
         </div>
       </div>
       <div className="form">
-        <div className="thumbnail">
-          <img src={imageSrc} alt="patient" />
-        </div>
         <form
           className="register-form"
           id="signupForm"
@@ -285,6 +286,9 @@ export default function Signup() {
             <Link to="/"> Sign In</Link>
           </p>
         </form>
+      </div>
+      <div className="thumbnail">
+        <img src={imageSrc} alt="patient" />
       </div>
     </div>
   );

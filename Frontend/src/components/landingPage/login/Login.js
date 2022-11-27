@@ -3,7 +3,7 @@ import axios from "axios";
 import "./login.css";
 import { toast, ToastContainer } from "react-toastify";
 import { Link, useNavigate } from "react-router-dom";
-import loginImage from "../../../assets/images/patient-login.png";
+import loginImage from "../../../assets/images/Asset2.png";
 
 export default function Login() {
   const navigate = useNavigate();
@@ -59,17 +59,27 @@ export default function Login() {
   };
 
   return (
-    <div>
+    <div
+      style={{
+        backgroundColor: "#f3e9d2",
+        marginTop: "-3rem",
+        padding: "5rem 0",
+        paddingBottom: "12rem",
+      }}
+    >
       <ToastContainer />
       <div className="containerLogin">
         <div className="info">
           <h1>Login</h1>
         </div>
       </div>
-      <div className="form">
-        <div className="thumbnail">
+      <div
+        className="form"
+        style={{ background: "rgba(0, 56, 101,1)", marginLeft: "5rem" }}
+      >
+        {/* <div className="thumbnail">
           <img src={loginImage} alt="patient" />
-        </div>
+        </div> */}
         <form className="login-form" onSubmit={handleSubmit}>
           <input
             type="email"
@@ -94,6 +104,7 @@ export default function Login() {
           </p>
         </form>
       </div>
+      <img src={loginImage} className="lthumbnail" alt="doc" />
     </div>
   );
 }
