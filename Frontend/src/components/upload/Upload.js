@@ -115,10 +115,13 @@ const Upload = () => {
         <h4>Upload Documents</h4>
         <hr />
 
-        <div className="d-flex mb-2">
+        <div
+          className="d-flex"
+          style={{ flexDirection: "column", gap: "2rem", margin: "2rem 0" }}
+        >
           <div className="mr-4">
-            <label id="name" className="mr-2">
-              Unique Name
+            <label id="name" className="mr-2" style={{ marginRight: "1rem" }}>
+              Unique Name:
             </label>
             <input
               type="text"
@@ -129,7 +132,9 @@ const Upload = () => {
             />
           </div>
           <div>
-            <label className="mr-2">Type of Doc</label>
+            <label className="mr-2" style={{ marginRight: "1rem" }}>
+              Type of Document:
+            </label>
             <select
               value={inputData.type}
               onChange={(e) => handleChange(e, "type")}
